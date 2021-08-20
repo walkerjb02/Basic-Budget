@@ -62,8 +62,6 @@ class Menu(Master):
         self.oD.append(self.total_amount - (self.amount_food_spend + self.amount_bills_spend + self.amount_clothes_spend))
         self.tD.append(self.amount_food_spend + self.amount_clothes_spend + self.amount_bills_spend + (self.total_amount - (self.amount_food_spend + self.amount_bills_spend + self.amount_clothes_spend)))
     def deposit(self):
-        amount_left_over = self.total_amount - (
-                self.amount_food_spend + self.amount_bills_spend + self.amount_clothes_spend)
         change = input('You said you would like to make a deposit? ')
         print(change)
         if 'yes' in change:
